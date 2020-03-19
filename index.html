@@ -21,31 +21,51 @@
 </head>
 <body>
     
-    <h1>Meg Gilbert</h1>
-    
-    <ul>
-        <li>people</li>
-        <li>plants</li>
-        <li>paint</li>
-    </ul>
+<main>
 
-    <img src="img/ugly photo.jpg" alt="Photo">
-    <footer></footer>
-    <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" required/></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-       
-        <p>
-          <label>Message: <textarea name="message" required></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+  
+
+
+
+</main>
+    
+  <footer>
+    <p>&copy; Additional footer info.</p>
+
+
+    <!-- CONTACT FORM -->
+    <form name="My Contact Form" method="POST"
+      data-netlify="true"
+      data-netlify-recaptcha="true">
+      <h3 class="contactTitle">Contact Me</h1>
+      <p>
+        <label>Your Name: 
+          <input type="text" name="name" required/></label>   
+      </p>
+      
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      
+      <p>
+        <label>Message: <textarea name="message" required></textarea></label>
+      </p>
+      
+      <p>
+        <input type="file">
+      </p>
+
+      <div data-netlify-recaptcha="true"></div>
+
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    
+    </form>
+    
+
+
+  </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.5.6/plyr.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
