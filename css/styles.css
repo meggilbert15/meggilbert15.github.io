@@ -57,7 +57,7 @@ a:hover {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: rgb(116, 108, 231);
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 #who {
@@ -138,6 +138,7 @@ h2 {
     margin-top: 70em;
     background: #FFA5FB;
     height: fit-content;
+    padding-bottom: 50em;
 }
 
 .whatTitle {
@@ -174,7 +175,7 @@ h2 {
 
 #whatContent {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "image1 item1"
         "image2 item2"
         "image3 item3";
@@ -182,10 +183,16 @@ h2 {
     grid-template-columns: 1fr 1fr;
     margin-top: 55em;
     padding-top: 8em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+
 
 .item1 {
     grid-area: item1;
+    font-size: 2em;
+    text-align: center;
+    color: #47059B;
 }
 
 .img1 {
@@ -194,6 +201,9 @@ h2 {
 
 .item2 {
     grid-area: item2;
+    font-size: 2em;
+    text-align: center;
+    color: #47059B;
 }
 
 .img2 {
@@ -201,10 +211,64 @@ h2 {
 }
 .item3 {
     grid-area: item3;
+    font-size: 2em;
+    text-align: center;
+    color: #47059B;
 }
 
 .img3 {
     grid-area: image3;
+}
+
+#how {
+    background: rgb(212, 154, 226);
+    padding-top: 10em;
+    display: grid;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 67em;
+    height: fit-content;
+    padding-bottom: 50em;
+}
+
+.howTitle {
+    font-size: 13em;
+    font-weight: 600;
+    justify-self: center;
+    color: #2418A7;
+    z-index: 1;
+}
+
+.howIMG {
+    display: flex;
+    transform: scale(1);
+    z-index: 0;
+    justify-self: left;
+    margin-left: -8em;
+    margin-top: -49em;
+} 
+
+.come {
+    margin-top: -14em;
+    text-decoration: none;
+    margin-left: 8em;
+    height: fit-content; 
+    font-size: 1.5rem;
+    color: rgb(14, 22, 134);
+    font-family: 'Hind Guntur', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 2s ease-in-out;
+    z-index: 1;
+}
+
+.ig {
+    display: inline;
+    padding-top: 14em;
+}
+
+.tt {
+    margin-top: 24em;
 }
 
 form {
