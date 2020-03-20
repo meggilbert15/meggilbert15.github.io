@@ -6,51 +6,48 @@ body {
 }
 
 nav {
-    display: inline-flex;
-    height: fit-content;
+    display: grid;
+    grid-template-rows: auto;
+    height: 10em;
     width: 100%;
+    align-items: center;
+    margin-top: -5em;
+    margin-bottom: 3em;
 }
 
 .navSvg {
-    display: flex;
     justify-content: left;
-    transform: scale(30%);
+    transform: scale(25%);
     margin-right: 20%;
-    margin-top: -5%;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    font-size: 1.5em;
-    font-family: 'Hind Guntur', sans-serif;
-    font-weight: 400;
-    margin-top: 2em;
-    z-index: 1;
-    /* max-height: fit-content; */
-  }
 
 nav a {
-    text-decoration: none;
-}
-
-nav .home {
-    padding-left: 0em;
-}
-
-li {
     display: flex;
-    max-height: fit-content;
-    max-width: fit-content;
+    justify-content: center;
+    text-decoration: none;
+    height: fit-content; 
+    font-size: 1.5rem;
     color: #47059B;
-    padding-left: 2em;
-    /* text-align: center; */
+    font-family: 'Hind Guntur', sans-serif;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
+.who {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
 
+.what {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
 
+.how {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
 a:hover {
     text-decoration-line: underline;
     text-decoration-style: wavy;
@@ -58,14 +55,24 @@ a:hover {
 }
 
 #who {
+    padding-top: 6em;
     display: grid;
+    width: 100%;
+    overflow: hidden;
     /* max-width: 90%; */
 }
-.whoSvg{
+
+.whoSvgR, .whoSvgL {
     transform: scale(4);
-    margin-top: 5em;
-    justify-self: right;
+    margin-top: -17em;
     z-index: 0;
+}
+
+.whoSvgR {
+    justify-self: right;
+}
+.whoSvgL {
+    justify-self: left;
 }
 
 .whoTitle{
@@ -74,6 +81,7 @@ a:hover {
     font-weight: 600;
     justify-self: center;
     color: rgb(105, 96, 204);
+    z-index: 1;
     /* margin-left: 1.5em; */
 }
 
