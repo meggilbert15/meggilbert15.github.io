@@ -262,6 +262,8 @@ h2 {
     z-index: 1;
 }
 
+
+
 .ig {
     display: inline;
     padding-top: 14em;
@@ -271,8 +273,12 @@ h2 {
     margin-top: 24em;
 }
 
+#logos {
+    margin-top: 3em;
+}
+
 form {
-    margin-top: 55em;
+    /* margin-top: 55em; */
     font-size: .8em;
     text-align: center;
 }
